@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+VillesIHMTestsWithJavaScript.html
+http://localhost/FrontJavaScript/VillesIHMTestsWithJavaScript.html
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>VillesIHMTests.html</title>
+    </head>
+    <body>
+        <h1>Villes IHM Tests With JavaScript</h1>
+        <form action="../controls/VillesCTRLSelectAll.php" method="GET">
+            <input type="button" value="Villes SelectAll" name="btVillesSelectAll" id="btVillesSelectAll"/>
+        </form>
+        <hr>
+        <form action="../controls/VillesCTRLSelectOne.php" method="GET">
+            <input type="button" value="Villes SelectOne" name="btVillesSelectOne" id="btVillesSelectOne"  />
+            <input type="text" name="cp" id="cpSelectOne" value="75011" placeholder="CP ?"/>
+        </form>
+        <hr>
+        <form action="../PourFrontJS2022/controls/VillesCTRLDelete.php" method="POST">
+            <input type="button" value="Villes Delete" name="btVillesDelete" id="btVillesDelete" />
+            <input type="text" name="cp" id="cpDelete" value="75021" placeholder="CP ?"/>
+        </form>
+        <hr>
+        <form action="../PourFrontJS2022/controls/VillesCTRLInsert.php" method="POST">
+            <input type="button" value="Villes Insert" name="btVillesInsert" id="btVillesInsert" />
+            <input type="text" name="cp" id="cpInsert" value="75021" placeholder="CP ?"/>
+            <input type="text" name="nomVille" id="nomVille" value="Paris 21" placeholder="Ville ?"/>
+            <input type="text" name="site" id="site" value="www.paris21.fr" placeholder="Site ?"/>
+            <input type="text" name="photo" id="photo" value="paris21.jpg" placeholder="Photo ?"/>
+            <input type="text" name="idPays" id="idPays" value="033" placeholder="ID Pays ?"/>
+        </form>
+
+        <p id="resultats">Résultats</p>
+
+        <script src="villes.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,6 @@
+
+code;nom;cp
+1;Tintin;75011
+2;Milou;75011
+3;Haddock;75012
+4;Casta;75016
