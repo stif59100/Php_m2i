@@ -1,13 +1,13 @@
 <?php
 
-$cnx = new PDO('mysql:host=localhost;dbname=my_database;charset=utf8', 'root', '');
+$cnx = new PDO('mysql:host=localhost;dbname=cours;charset=utf8', 'root', '');
 
 $page = (!empty($_GET['page']) ? $_GET['page'] : 1);
 $limite = 10;
 
 // Partie "Requête"
 $debut = ($page - 1) * $limite;
-$query = 'SELECT * FROM `my_table` LIMIT :limite OFFSET :debut';
+$query = 'SELECT * FROM `villes` LIMIT :limite OFFSET :debut';
 $query = $cnx->prepare($query);
 $query->bindValue('debut', $debut, PDO::PARAM_INT);
 $query->bindValue('limite', $limite, PDO::PARAM_INT);

@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 // On charge le fichier
 require_once '../entities/User.php';
+require_once '../DAOS/dao.php';
 
 // Déclaration de la classe
 class UserDAO {
